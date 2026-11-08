@@ -1,0 +1,85 @@
+#sfpMonitoring{padding:7px 10px;margin-bottom:10px!important}
+.sfp-heading,.sfp-controls,.sfp-card-head,.sfp-foot{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.sfp-heading{margin-bottom:5px;flex-wrap:wrap}
+.sfp-heading strong{font-size:.85rem}
+.sfp-heading>div:first-child .sfp-caption{margin-left:10px}
+.sfp-caption{font-size:.68rem;color:#8fa8bb}
+.sfp-controls .btn{padding:2px 7px;font-size:.68rem}
+.sfp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:5px}
+.sfp-card{border:1px solid #29465c;border-radius:6px;background:#081725;padding:5px 6px;min-width:0}
+.sfp-card-head{align-items:flex-start}
+.sfp-card-head>b{font-size:.7rem;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sfp-state{font-size:.61rem;line-height:1.2;flex-shrink:0;max-width:45%;text-align:right;color:#9bb2c4}
+.sfp-normal{border-color:#207858}
+.sfp-normal .sfp-state{color:#22d783}
+.sfp-alarm{border-color:#ff5b68;background:#271a24}
+.sfp-alarm .sfp-state,.sfp-alarm .sfp-values>span:first-child{color:#ff7b85;font-weight:700}
+.sfp-values{display:flex;align-items:baseline;gap:3px 10px;flex-wrap:wrap;font-size:.64rem;margin:4px 0;color:#9bb2c4}
+.sfp-values strong{font-size:.85rem;color:#e3eef8}
+.sfp-alarm .sfp-values>span:first-child strong{color:#ff7b85}
+.sfp-values b{color:#d8e6ef}
+.sfp-foot{flex-wrap:wrap;font-size:.58rem;color:#8fa8bb;gap:2px 6px}
+.sfp-empty{color:#8fa8bb;font-size:.75rem;padding:4px;grid-column:1/-1}
+#sfpAlarmForm:not([hidden]){display:flex;gap:7px;align-items:end;flex-wrap:wrap;margin:4px 0 8px}
+#sfpAlarmForm label{font-size:.7rem;color:#a8bdcc}
+#sfpAlarmForm select{max-width:380px;font-size:.72rem}
+#sfpAlarmForm input{display:inline-block;width:90px;font-size:.75rem}
+.sfp-controls{flex-wrap:wrap}
+#sfpChoosePanel{border-top:1px solid #29465c;margin:5px 0 8px;padding:7px 0}
+.sfp-choice-list{display:flex;flex-wrap:wrap;gap:6px 18px;margin:6px 0;font-size:.74rem;color:#c7d8e6}
+.sfp-choice-list label{display:flex;align-items:center;gap:5px;cursor:pointer}
+.sfp-choice-list input{accent-color:#16a4ff}
+#sfpShowAll{padding:2px 7px;font-size:.68rem;margin-right:8px}
+@media(max-width:575px){.sfp-grid{grid-template-columns:minmax(0,1fr)}.sfp-heading>div:first-child .sfp-caption{display:block;margin-left:0}}
+
+/* More compact ping and optical cards without removing key readings. */
+#priorityPing{padding:5px 8px!important}
+#priorityPingGrid{--bs-gutter-x:4px;--bs-gutter-y:4px;padding-bottom:3px}
+#priorityPingGrid .p-2{padding:4px 5px!important}
+#priorityPingGrid svg{height:32px}
+#priorityPingGrid .small{line-height:1.12}
+#priorityPingGrid .small.mt-1{margin-top:1px!important}
+#priorityPingGrid .d-flex.flex-wrap{gap:1px 5px!important}
+#priorityPingGrid .p-2>div:last-child{margin-top:1px;line-height:1.1}
+#sfpMonitoring{padding:4px 8px}
+.sfp-heading{margin-bottom:3px}
+.sfp-card{padding:3px 5px}
+.sfp-card-head{gap:5px}
+.sfp-values{margin:2px 0;gap:2px 9px}
+.sfp-foot{line-height:1.1}
+
+/* Tight cards while keeping the taller ping plot. */
+#priorityPing{padding:3px 6px!important}
+#priorityPingGrid{--bs-gutter-x:3px;--bs-gutter-y:3px;padding-bottom:2px}
+#priorityPingGrid .p-2{padding:2px 4px!important}
+#priorityPingGrid .small{line-height:1.05}
+#priorityPingGrid .small.mt-1{margin-top:0!important}
+#priorityPingGrid .d-flex.flex-wrap{gap:0 4px!important}
+#priorityPingGrid .p-2>div:last-child{margin-top:0;line-height:1.05}
+#sfpMonitoring{padding:3px 6px}
+.sfp-heading{margin-bottom:2px}
+.sfp-card{padding:2px 4px}
+.sfp-values{margin:1px 0;gap:1px 8px}
+
+/* Extra compact card typography. The ping plot remains 32px. */
+#priorityPing{padding:2px 5px!important}
+#priorityPingGrid .p-2{padding:2px 3px!important;border-radius:5px!important}
+#priorityPingGrid b{font-size:.62rem;line-height:1.05}
+#priorityPingGrid strong{font-size:.88rem!important;line-height:1}
+#priorityPingGrid .small{font-size:.58rem;line-height:1.02}
+#priorityPingGrid .p-2>div:last-child{font-size:.54rem!important;line-height:1;margin-top:0}
+#priorityPingGrid .d-flex.flex-wrap{gap:0 3px!important}
+#priorityPingGrid .small.mt-1{margin-top:0!important}
+#priorityPingGrid .btn-sm{font-size:.5rem!important;line-height:1;padding:0 2px!important}
+#priorityPing>.d-flex>div>.small{font-size:.57rem;line-height:1}
+#priorityPing>.d-flex>div>strong{font-size:.76rem}
+#sfpMonitoring{padding:2px 5px}
+.sfp-heading{margin-bottom:1px}
+.sfp-heading strong{font-size:.76rem}
+.sfp-card{padding:2px 3px}
+.sfp-card-head>b{font-size:.63rem;line-height:1.05}
+.sfp-state{font-size:.55rem;line-height:1.05}
+.sfp-values{font-size:.57rem;margin:1px 0;line-height:1.05;gap:1px 7px}
+.sfp-values strong{font-size:.75rem;line-height:1.05}
+.sfp-foot{font-size:.52rem;line-height:1}
+.sfp-caption{font-size:.59rem}

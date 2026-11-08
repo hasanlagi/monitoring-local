@@ -1,0 +1,17 @@
+/* Compact top summary and visible PPPoE outage alarm. */
+#dashboard>.col-6>.stat{min-height:50px;padding:3px 6px;gap:5px}
+#dashboard .stat-icon{width:22px;height:22px;min-width:22px;font-size:.73rem;border-radius:6px}
+#dashboard .stat-title{font-size:.51rem;line-height:1;letter-spacing:.02em}
+#dashboard .stat-value{font-size:1rem;line-height:1.02;margin-top:1px}
+#dashboard .traffic-main .stat-value{font-size:clamp(1rem,1.1vw,1.15rem);line-height:1.02}
+#dashboard .traffic-select{height:16px;font-size:.5rem;margin-top:1px!important;padding:0 .2rem}
+#dashboard .traffic-selected-label,#dashboard .stat-meta{font-size:.47rem;line-height:1.02;margin-top:1px}
+#dashboard .traffic-main .traffic-selected-label.mt-2{margin-top:1px!important}
+#dashboard .traffic-main .traffic-selected-label{display:none}
+.pppoe-off-alarm{border-color:#ff5b68!important;box-shadow:0 0 0 1px #ff5b6844!important}
+#dashboard .pppoe-off-alarm{background:#351824}
+#dashboard .pppoe-off-alarm #kOff,#dashboard .pppoe-off-alarm .stat-meta{color:#ff8291!important;font-weight:800}
+.pppoe-off-unknown{border-color:#b18d30!important}
+.pppoe-off-banner{background:#351824;color:#ffd2d8;border:1px solid #ff5b68;border-radius:6px;padding:5px 8px;margin:6px 10px;font-size:.78rem;font-weight:700}
+.pppoe-off-banner[hidden]{display:none}
+@media(max-width:575px){#dashboard>.col-6>.stat{min-height:64px}}
